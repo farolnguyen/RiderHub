@@ -1,0 +1,45 @@
+/* 🌟 Định dạng phần giữa của trang */
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* 🌟 Tạo overlay để làm nổi bật chữ */
+.middle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Điều chỉnh độ mờ */
+    z-index: 1;
+}
+
+/* 🌟 Nội dung chữ */
+.middle-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7); /* Làm nền đen mờ giúp chữ nổi bật hơn */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ffcc00;
+    max-width: 60%;
+}
+
+/* 🌟 Chỉnh màu chữ */
+.middle-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Màu chữ vàng nổi bật */
+    text-transform: uppercase;
+}
+
+.middle-content p {
+    font-size: 1.2rem;
+    color: #ffffff; /* Chữ trắng để dễ đọc */
+}

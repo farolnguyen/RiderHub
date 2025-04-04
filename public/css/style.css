@@ -1,0 +1,104 @@
+/* 🌟 RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌟 Cấu hình nền trang web */
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Giữ nội dung ít nhất bằng chiều cao màn hình */
+}
+/* 🌟 Đảm bảo phần nội dung mở rộng hết phần còn lại */
+.container {
+    flex: 1; /* Đẩy footer xuống dưới */
+}
+/* 🌟 Navbar */
+.navbar {
+    background-color: #111 !important;
+    padding: 15px 50px;
+    border-bottom: 3px solid #ffcc00;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-text {
+    font-size: 1.1rem;
+}
+
+/* 🌟 Navbar - Thương hiệu */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-brand span {
+    color: #ffcc00;
+}
+
+/* 🌟 Navbar - Menu */
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}  
+.nav-item {
+    text-align: center;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* 🌟 FOOTER FIX */
+.main-content {
+    flex: 1; /* Đẩy footer xuống */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🌟 FOOTER FIX */
+.footer {
+    background-color: #111;
+    color: #ffcc00;
+    text-align: center;
+    padding: 10px; /* Giảm chiều cao */
+    font-size: 0.8rem; /* Giảm font chữ */
+    border-top: 2px solid #ffcc00;
+    width: 100%;
+    margin-top: auto; /* Giữ cố định dưới cùng */
+}
+/* 🌟 Nút giỏ hàng */
+.nav-link {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#cart-count {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: absolute;
+    top: 8px;
+    right: 2px;
+}

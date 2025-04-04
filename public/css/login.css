@@ -1,0 +1,64 @@
+/* 🌟 Căn chỉnh toàn bộ trang */
+.main-content {
+    padding-top: 30px; /* Đẩy nội dung xuống dưới navbar */
+    flex: 1;
+}
+
+/* 🌟 Tiêu đề trang */
+h1.text-warning {
+    font-size: 3rem; /* Kích thước lớn */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffcc00; /* Màu chữ vàng */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Viền đen xung quanh */
+    padding: 10px;
+}
+
+/* 🌟 Card đăng nhập */
+.card {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ffcc00;
+    background: rgba(20, 20, 20, 0.9) !important; /* Làm card có màu nền tối */
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+/* 🌟 Các trường nhập liệu */
+.form-control {
+    background: transparent;
+    border: 1px solid #ffcc00;
+    color: white;
+}
+
+/* 🌟 Nút đăng nhập */
+.btn-warning {
+    padding: 12px 24px;
+    font-weight: bold;
+    border: 2px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800;
+    color: black;
+    border-color: white;
+}
+
+/* 🌟 Hiển thị thông báo lỗi */
+.alert-danger {
+    color: white;
+    background-color: #ff6666;
+    border: 1px solid #ff3333;
+}
+
+/* 🌟 Lỗi khi không điền đúng thông tin */
+.text-danger {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* 🌟 Lỗi thông báo chưa có tài khoản */
+.text-warning {
+    color: #ffcc00;
+    font-weight: bold;
+}
